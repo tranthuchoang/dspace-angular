@@ -1,6 +1,6 @@
 const webpackMerge = require('webpack-merge');
 
-const prodPartial = require('./webpack/webpack.dev');
+const prodPartial = require('./webpack/webpack.prod');
 
 module.exports = function (env, options) {
     env = env || {};
