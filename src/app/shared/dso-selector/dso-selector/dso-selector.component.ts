@@ -85,7 +85,7 @@ export class DSOSelectorComponent implements OnInit {
       .pipe(
         debounceTime(this.debounceTime),
         startWith(this.currentDSOId),
-        switchMap((query) => {
+        switchMap((query) => {          
             return this.searchService.search(
               new PaginatedSearchOptions({
                 query: query,
@@ -96,6 +96,7 @@ export class DSOSelectorComponent implements OnInit {
           }
         )
       )
+    
   }
 
   /**

@@ -66,17 +66,17 @@ export class NavbarComponent extends MenuComponent implements OnInit {
       // },
 
       /* Statistics */
-      {
-        id: 'statistics',
-        active: false,
-        visible: true,
-        model: {
-          type: MenuItemType.LINK,
-          text: 'menu.section.statistics',
-          link: ''
-        } as LinkMenuItemModel,
-        index: 2
-      },
+      // {
+      //   id: 'statistics',
+      //   active: false,
+      //   visible: true,
+      //   model: {
+      //     type: MenuItemType.LINK,
+      //     text: 'menu.section.statistics',
+      //     link: ''
+      //   } as LinkMenuItemModel,
+      //   index: 2
+      // },
     ];
     // Read the different Browse-By types from config and add them to the browse menu
     const types = this.config.browseBy.types;

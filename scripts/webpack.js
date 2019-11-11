@@ -2,7 +2,8 @@ const path = require('path');
 const child_process = require('child_process');
 
 const heapSize = 4096;
-const webpackPath = path.join('node_modules', 'webpack', 'bin', 'webpack.js');
+const webpackPath = path.join('node_modules', 'webpack-dev-server', 'bin', 'webpack-dev-server.js');
+// const webpackPath = path.join('node_modules', 'webpack', 'bin', 'webpack.js');
 
 const params = [
   '--max_old_space_size=' + heapSize,
